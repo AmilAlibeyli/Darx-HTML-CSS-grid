@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #1a1a1c;
+    border-bottom: 5px solid #2096da;
+    text-align: center;
+}
+
+nav>a {
+    display: block;
+    background-color: #2096da;
+    padding: 25px 0 25px 0;
+}
+ 
+#menu li {
+    padding: 2px;
+}
+
+#menu li a {
+    font: 1.1em "Caviar Dreams";
+    color: #fff;
+}
+
+#num {
+    font: .8em "MuseoModerno";
+    color: #7f7c7c;
+}
+
+#s-icon{
+    padding: 10px 0;
+}
+#s-icon a{
+    display: inline-grid;
+    justify-content: center;
+    align-content: center;
+    padding: 5px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #2c2c2e;
+}
+
+#s-icon a i{
+    color: #7f7c7c;
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+    #menu li:hover ,#s-icon a:hover {
+        background-color: #2096da;
+    }
+
+    .container{
+        max-width: 960px;
+        margin: auto;
+    }
+
+    nav{
+        display: grid;
+        grid-template-columns: 130px auto;
+        justify-content: space-between;
+    }
+
+    nav > a  {
+        grid-row: 1 / 4;
+    }
+
+    #menu{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        justify-content: space-between;
+        grid-area: 3 / 2 / 3 / 3;
+    }
+
+    #menu li{
+        margin-left: 25px;
+        padding: 7px 15px 3px 15px ;
+    }
+
+    .active{
+        background-color:  #2096da;;
+    }
+
+    
+
+    #connect{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: end;
+    }
+    #num{
+        padding: 4px 15px 0 0;
+    }
+
+    #s-icon{
+        padding: 0;
+    }
+   
+}
