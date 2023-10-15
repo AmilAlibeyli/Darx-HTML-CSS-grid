@@ -65,9 +65,6 @@ main {
     width: 200px;
 }
 
-#item1 {
-    grid-template-columns: minmax(100px, 232px)
-}
 
 #item2 {
     background: url(../img/art02.jpg) center/cover;
@@ -121,6 +118,9 @@ main {
     background: rgba(20, 20, 21, 0.5);
     display: grid;
     align-content: center;
+    justify-content: center;
+    grid-template-columns: minmax(100px, 232px)
+    
 
 }
 
@@ -152,7 +152,7 @@ main .container {
     display: inline-block;
     border: 0;
     border-bottom: 1px solid #fff;
-    width: 55px;
+    min-width: 55px;
 }
 
 
@@ -190,33 +190,38 @@ footer {
 
 
 .f-icons {
-    display: grid;
+   display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* margin: 0 10px; */
     width: 100%;
-    grid-template-columns: auto auto auto auto auto auto auto;
-    justify-content: space-between;
-
-
+    transform: translate(0, -50%);
+    
 
 }
 
 
-footer .container a {
+
+
+.f-icons a {
     display: inline-grid;
     justify-content: center;
     align-content: center;
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     background-color: rgba(32, 32, 34, 0.8);
+    margin: 0 10px;
 }
 
-footer .container a i {
+.f-icons a i {
     color: #777;
-    font-size: 45px;
+    font-size: 30px;
+
 }
 
-.f-icons{
-    transform: translate(0, -50%);
+.h-sec hr{
+    min-width: 55px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -292,6 +297,26 @@ footer .container a i {
     #item16 {
         grid-area: 5 / 3 / 6 / 5;
     }
+
+    /* .f-icons{
+
+    grid-template-columns: auto auto auto auto auto auto auto;
+    justify-content: space-between;
+
+    } */
+
+    .f-icons a{
+        width: 100px;
+        height: 100px;
+    }
+
+    .f-icons a i{
+        font-size: 45px;
+    }
+
+  
+
+    
 
   
 }
