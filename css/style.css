@@ -1,16 +1,14 @@
+/* Reset CSS */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-ul {
-    list-style: none;
-}
+ul { list-style: none;}
+a {text-decoration: none;}
 
-a {
-    text-decoration: none;
-}
+/* Header */
 
 header {
     background-color: #1a1a1c;
@@ -24,23 +22,10 @@ nav>a {
     padding: 25px 0 25px 0;
 }
 
-#menu li {
-    padding: 2px;
-}
-
-#menu li a {
-    font: 1.1em "Caviar Dreams";
-    color: #fff;
-}
-
-#num {
-    font: .8em "MuseoModerno";
-    color: #7f7c7c;
-}
-
-#s-icon {
-    padding: 10px 0;
-}
+#menu li {padding: 2px;}
+#menu li a {font: 1.1em "Caviar Dreams"; color: #fff;}
+#num {font: .8em "MuseoModerno"; color: #7f7c7c;}
+#s-icon {padding: 10px 0;}
 
 #s-icon a {
     display: inline-grid;
@@ -53,62 +38,22 @@ nav>a {
     background-color: #2c2c2e;
 }
 
-#s-icon a i {
-    color: #7f7c7c;
-}
+/* Main */
 
-main {
-    background: url(/img/mainbg.jpg);
-}
-
-#txt {
-    width: 200px;
-}
-
-
-#item2 {
-    background: url(../img/art02.jpg) center/cover;
-}
-
-#item3 {
-    background: url(../img/art03.jpg) center/cover;
-}
-
-#item4 {
-    background: url(../img/art04.jpg) center/cover;
-}
-
-#item5 {
-    background: url(../img/art05.jpg) center/cover;
-}
-
-#item6 {
-    background: url(../img/art06.jpg) center/cover;
-}
-
-#item8 {
-    background: url(../img/art08.jpg) center/cover;
-}
-
-#item10 {
-    background: url(../img/art10.jpg) center/cover;
-}
-
-#item11 {
-    background: url(../img/art11.jpg) center/cover;
-}
-
-#item12 {
-    background: url(../img/art12.jpg) center/cover;
-}
-
-#item13 {
-    background: url(../img/art13.jpg) center/cover;
-}
-
-#item16 {
-    background: url(../img/art16.jpg) center/cover;
-}
+#s-icon a i {color: #7f7c7c;}
+main {background: url(/img/mainbg.jpg);}
+#txt {width: 200px;}
+#item2 {background: url(../img/art02.jpg) center/cover;}
+#item3 {background: url(../img/art03.jpg) center/cover;}
+#item4 {background: url(../img/art04.jpg) center/cover;}
+#item5 {background: url(../img/art05.jpg) center/cover;}
+#item6 {background: url(../img/art06.jpg) center/cover;}
+#item8 {background: url(../img/art08.jpg) center/cover;}
+#item10 {background: url(../img/art10.jpg) center/cover;}
+#item11 { background: url(../img/art11.jpg) center/cover;}
+#item12 {background: url(../img/art12.jpg) center/cover;}
+#item13 {background: url(../img/art13.jpg) center/cover;}
+#item16 {background: url(../img/art16.jpg) center/cover;}
 
 #item1,
 #item7,
@@ -120,33 +65,23 @@ main {
     align-content: center;
     justify-content: center;
     grid-template-columns: minmax(100px, 232px)
-    
-
 }
 
-
-
-
-main {
-    padding: 45px 0 120px 0;
-}
-
+main {padding: 45px 0 120px 0;}
 main .container {
     display: grid;
-    grid-template-rows: 50vh 50vh 100vh 50vh 50vh 50vh 50vh 100vh 50vh 50vh 100vh 50vh 50vh 50vh 50vh 50vh;
+    grid-template-rows: 50vh 50vh 100vh 50vh 50vh
+                        50vh 50vh 100vh 50vh 50vh 
+                        100vh 50vh 50vh 50vh 50vh 50vh;
 }
 
-.part{
-    padding: 0 16px;
-}
-
+.part {padding: 0 16px;}
 .part p {
-    font: italic 1.5em/1.5  Georgia;
+    font: italic 1.5em/1.5 Georgia;
     color: #777;
     text-align: center;
     padding: 13px 0;
 }
-
 
 .line hr {
     display: inline-block;
@@ -154,8 +89,6 @@ main .container {
     border-bottom: 1px solid #fff;
     min-width: 55px;
 }
-
-
 
 .line i {
     font-size: 40px;
@@ -177,31 +110,18 @@ main .container {
     align-items: center;
 }
 
-
-
 /* Footer */
 
 
-footer {
-    background-color: #1a1a1c;
-
-}
-
-
+footer {background-color: #1a1a1c;}
 
 .f-icons {
-   display: flex;
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    /* margin: 0 10px; */
     width: 100%;
     transform: translate(0, -50%);
-    
-
 }
-
-
-
 
 .f-icons a {
     display: inline-grid;
@@ -217,24 +137,123 @@ footer {
 .f-icons a i {
     color: #777;
     font-size: 30px;
-
 }
 
-.h-sec hr{
-    min-width: 55px;
+.f-row {
+    display: grid;
+    justify-content: center;
+    padding-bottom: 20px;
 }
+
+section {
+    max-width: 168px;
+    display: grid;
+    padding: 15px 0;
+}
+
+.h-sec {
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding-bottom: 10px;
+}
+
+.h-sec hr {
+    opacity: 0.102;
+    background-color: #fff;
+    height: 1px;
+}
+
+.h-sec h3 {
+    font: 1.1em "Caviar Dreams";
+    color: #c5c5c5;
+    text-align: center;
+}
+
+.secimg {
+    display: grid;
+    grid-template-columns: 55px 55px 55px;
+    justify-content: center;
+    gap: 1px;
+}
+
+.secimg img {
+    width: 55px;
+    height: 35px;
+    border: 3px solid #262627;
+}
+
+#sec-content {
+    display: grid;
+    grid-template-columns: 65px 100px;
+    align-content: center;
+    justify-content: start;
+    gap: 1px;
+    padding-top: 20px;
+}
+
+#sec-content img {
+    width: 65px;
+    height: 75px;
+    border: 3px solid #262627;
+}
+
+#sec-content h5 {
+    font: .6em "MuseoModerno";
+    color: #c5c5c5;
+    padding-left: 5px;
+}
+
+#sec-content p {
+    font: 0.5em "MuseoModerno";
+    color: #777;
+    padding-left: 5px;
+}
+
+#first {grid-area: 1 / 1 / 3 / 2;}
+#second {grid-area: 3 / 1 / 5 / 2;}
+
+input {
+    padding: 7px 0 7px 15px;
+    width: 100%;
+    background-color: #262627;
+    border: 0;
+    margin-bottom: 10px;
+}
+
+#form {text-align: end;}
+
+#form button {
+    padding: 10px 15px 5px 15px;
+    margin-top: 8px;
+    color: #fff;
+    background-color: #262627;
+    border: 0;
+}
+
+#maker {background-color: #2096da; padding: 7px 7px;}
+#maker ul li {font: .9em Arial; color: #fff;}
+#maker p {font: 0.6 Arial; color: #fff;}
+
+#f-menu {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+#f-menu li {padding: 0 5px;}
+#maker p {text-align: center;}
+
+/* Responsive Design */
 
 @media only screen and (min-width: 768px) {
 
     #menu li:hover,
-    #s-icon a:hover {
-        background-color: #2096da;
-    }
-
-    .container {
-        max-width: 960px;
-        margin: auto;
-    }
+    #s-icon a:hover {background-color: #2096da;}
+    .container {max-width: 960px;margin: auto;}
 
     nav {
         display: grid;
@@ -242,9 +261,7 @@ footer {
         justify-content: space-between;
     }
 
-    nav>a {
-        grid-row: 1 / 4;
-    }
+    nav>a {grid-row: 1 / 4;}
 
     #menu {
         display: grid;
@@ -253,14 +270,8 @@ footer {
         grid-area: 3 / 2 / 3 / 3;
     }
 
-    #menu li {
-        margin-left: 25px;
-        padding: 7px 15px 3px 15px;
-    }
-
-    .active {
-        background-color: #2096da;
-    }
+    #menu li {margin-left: 25px; padding: 7px 15px 3px 15px;}
+    .active { background-color: #2096da;}
 
     #connect {
         display: grid;
@@ -268,13 +279,8 @@ footer {
         justify-content: end;
     }
 
-    #num {
-        padding: 4px 15px 0 0;
-    }
-
-    #s-icon {
-        padding: 0;
-    }
+    #num {padding: 4px 15px 0 0;}
+    #s-icon {padding: 0;}
 
     main .container {
         grid-template-columns: repeat(4, minmax(100px, 230px));
@@ -282,41 +288,51 @@ footer {
         gap: 10px;
     }
 
-    #item3 {
-        grid-area: 1 / 3 / 3 / 4;
+    #item3 {grid-area: 1 / 3 / 3 / 4; }
+    #item10 {grid-area: 3 / 3 / 4 / 5;}
+    #item11 { grid-area: 4 / 1 / 6 / 2;}
+    #item16 { grid-area: 5 / 3 / 6 / 5;}
+    .f-icons a {width: 100px;height: 100px;}
+    .f-icons a i { font-size: 45px;}
+
+    .secimg img {
+        width: 90px;
+        height: 70px;
+        border: 5px solid #262627;
     }
 
-    #item10 {
-        grid-area: 3 / 3 / 4 / 5;
+    .f-row {
+        grid-template-columns: auto auto auto;
+        justify-content: space-between;
+        align-content: center;
     }
 
-    #item11 {
-        grid-area: 4 / 1 / 6 / 2;
+    section {max-width: 272px;}
+    .secimg {grid-template-columns: 90px 90px 90px;}
+    .h-sec h3 {font-size: 0.8em;}
+
+    #sec-content {
+        display: grid;
+        grid-template-columns: 100px 170px;
+        align-content: center;
+        justify-content: start;
+        gap: 1px;
     }
 
-    #item16 {
-        grid-area: 5 / 3 / 6 / 5;
-    }
-
-    /* .f-icons{
-
-    grid-template-columns: auto auto auto auto auto auto auto;
-    justify-content: space-between;
-
-    } */
-
-    .f-icons a{
+    #sec-content img {
         width: 100px;
-        height: 100px;
+        height: 80px;
+        border: 5px solid #262627;
+
     }
 
-    .f-icons a i{
-        font-size: 45px;
+    #sec-content h5 {font: .9em}
+    #sec-content p {font-size: 0.6em}
+    #f-menu {grid-template-columns: auto auto auto auto;}
+
+    #maker .container {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
     }
-
-  
-
-    
-
-  
 }
